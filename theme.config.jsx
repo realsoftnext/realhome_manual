@@ -1,16 +1,11 @@
-export default {
-  logo: <span>부동산 매물관리 시스템 매뉴얼</span>,
+const config = {
+  logo: <span style={{ fontWeight: 600 }}>리얼홈 부동산 매물관리 시스템 매뉴얼</span>,
   project: {
     link: 'https://github.com/realsoftnext/realhome_manual'
   },
   docsRepositoryBase: 'https://github.com/realsoftnext/realhome_manual/tree/main',
   footer: {
-    text: '부동산 매물관리 시스템 사용자 매뉴얼'
-  },
-  useNextSeoProps() {
-    return {
-      titleTemplate: '%s – 부동산 매물관리 시스템'
-    }
+    content: <span>리얼홈 부동산 매물관리 시스템 사용자 매뉴얼 © 2025</span>
   },
   head: (
     <>
@@ -79,3 +74,5 @@ export default {
     </>
   )
 }
+
+export default config

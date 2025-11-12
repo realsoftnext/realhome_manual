@@ -1,0 +1,44 @@
+{
+  "01-getting-started": {
+    "title": "1. 시작하기"
+  },
+  "02-login-account": {
+    "title": "2. 로그인 및 계정 관리"
+  },
+  "03-dashboard": {
+    "title": "3. 대시보드"
+  },
+  "04-product-registration": {
+    "title": "4. 매물 등록하기"
+  },
+  "05-product-management": {
+    "title": "5. 매물 관리하기"
+  },
+  "06-contact-management": {
+    "title": "6. 고객 연락처 관리"
+  },
+  "07-enquiry-management": {
+    "title": "7. 문의 관리"
+  },
+  "08-contract-management": {
+    "title": "8. 계약 관리"
+  },
+  "09-category-settings": {
+    "title": "9. 매물 종류 설정"
+  },
+  "10-staff-permissions": {
+    "title": "10. 직원 및 권한 관리"
+  },
+  "11-content-management": {
+    "title": "11. 홈페이지 콘텐츠 관리"
+  },
+  "12-faq": {
+    "title": "12. 자주 묻는 질문 (FAQ)"
+  },
+  "13-quick-reference": {
+    "title": "13. 빠른 참조 가이드"
+  },
+  "14-glossary": {
+    "title": "14. 용어 설명"
+  }
+}
