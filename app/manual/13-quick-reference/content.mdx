@@ -271,8 +271,8 @@
 ## 더 자세한 정보
 
 - [매뉴얼 목차](../README.md)
-- [FAQ](12-faq.md)
-- [용어 설명](14-glossary.md)
+- [FAQ](/manual/12-faq)
+- [용어 설명](/manual/14-glossary)
 
 ---
 

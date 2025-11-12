@@ -1,4 +1,4 @@
-# 2. 로그인 및 계정 관리
+﻿# 2. 로그인 및 계정 관리
 
 [← 목차로 돌아가기](../)
 
@@ -12,7 +12,7 @@
 
 관리자 계정이 없으신가요? 관리자 회원가입
 
-<figure><img src="../.gitbook/assets/image (1).png" alt="" /></figure>
+<figure><img src="/images/image (1).png" alt="" /></figure>
 
 회원가입 후 승인대기상태가 되며, 관리자 승인 후에 로그인이 가능합니다.
 
@@ -22,7 +22,7 @@
 
 관리자 페이지(`/admin`)에 접속하면 로그인 화면이 나타납니다.
 
-<figure><img src="../.gitbook/assets/image.png" alt="" /></figure>
+<figure><img src="/images/image.png" alt="" /></figure>
 
 ### 로그인 단계
 
@@ -57,7 +57,7 @@
 1. 직원용 이용약관
 2. 직원 기물유지동의서(NDA)
 
-<figure><img src="../.gitbook/assets/image (2).png" alt="" /></figure>
+<figure><img src="/images/image (2).png" alt="" /></figure>
 
 약관이 개정 되면 다시 약관동의 창이 나오며 동의를 해야 시스템을 이용할 수 있습니다.
 
@@ -313,7 +313,7 @@
 
 로그인에 성공했다면 시스템의 주요 화면을 살펴보세요:
 
-➡️ [3. 대시보드 살펴보기](03-dashboard.md)
+➡️ [3. 대시보드 살펴보기](/manual/03-dashboard)
 
 ***
 

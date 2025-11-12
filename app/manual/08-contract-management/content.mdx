@@ -513,7 +513,7 @@
 
 계약 관리를 익혔다면, 시스템 설정 방법을 알아보세요:
 
-➡️ [9. 매물 종류 설정](09-category-settings.md)
+➡️ [9. 매물 종류 설정](/manual/09-category-settings)
 
 ---
 

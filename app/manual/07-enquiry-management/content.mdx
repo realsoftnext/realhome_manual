@@ -369,7 +369,7 @@
 - ❌ 계약 금액 (수동 입력 필요)
 - ❌ 결제 일정 (수동 입력 필요)
 
-자세한 내용은 [8. 계약 관리](08-contract-management.md) 참조
+자세한 내용은 [8. 계약 관리](/manual/08-contract-management) 참조
 
 ---
 
@@ -525,7 +525,7 @@
 
 문의 관리를 익혔다면, 계약 관리 방법을 알아보세요:
 
-➡️ [8. 계약 관리](08-contract-management.md)
+➡️ [8. 계약 관리](/manual/08-contract-management)
 
 ---
 

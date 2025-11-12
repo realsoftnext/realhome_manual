@@ -520,7 +520,7 @@
 
 카테고리 설정을 익혔다면, 직원 및 권한 관리 방법을 알아보세요:
 
-➡️ [10. 직원 및 권한 관리](10-staff-permissions.md)
+➡️ [10. 직원 및 권한 관리](/manual/10-staff-permissions)
 
 ---
 
