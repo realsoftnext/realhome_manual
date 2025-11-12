@@ -42,11 +42,17 @@ const menuItems = [
     ]
   },
   {
+    title: '홈페이지 관리',
+    items: [
+      { href: '/manual/12-website-management', label: '12. 홈페이지 관리' },
+    ]
+  },
+  {
     title: '참고 자료',
     items: [
-      { href: '/manual/12-faq', label: '12. FAQ' },
-      { href: '/manual/13-quick-reference', label: '13. 빠른 참조' },
-      { href: '/manual/14-glossary', label: '14. 용어 설명' },
+      { href: '/manual/13-faq', label: '13. FAQ' },
+      { href: '/manual/14-quick-reference', label: '14. 빠른 참조' },
+      { href: '/manual/15-glossary', label: '15. 용어 설명' },
     ]
   },
 ]
