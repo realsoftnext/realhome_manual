@@ -1,4 +1,18 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
+  "/manual/01-getting-started/page": "app/manual/01-getting-started/page.js",
+  "/manual/03-dashboard/page": "app/manual/03-dashboard/page.js",
+  "/manual/02-login-account/page": "app/manual/02-login-account/page.js",
+  "/manual/05-product-management/page": "app/manual/05-product-management/page.js",
+  "/manual/06-contact-management/page": "app/manual/06-contact-management/page.js",
+  "/manual/07-enquiry-management/page": "app/manual/07-enquiry-management/page.js",
+  "/manual/04-product-registration/page": "app/manual/04-product-registration/page.js",
+  "/manual/08-contract-management/page": "app/manual/08-contract-management/page.js",
+  "/manual/09-category-settings/page": "app/manual/09-category-settings/page.js",
+  "/manual/10-staff-permissions/page": "app/manual/10-staff-permissions/page.js",
+  "/manual/11-content-management/page": "app/manual/11-content-management/page.js",
+  "/manual/13-quick-reference/page": "app/manual/13-quick-reference/page.js",
+  "/manual/14-glossary/page": "app/manual/14-glossary/page.js",
+  "/manual/12-faq/page": "app/manual/12-faq/page.js",
   "/page": "app/page.js"
 }
