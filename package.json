@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "nextra": "^4.6.0",
+    "nextra-theme-docs": "^4.6.0"
+  }
+}
