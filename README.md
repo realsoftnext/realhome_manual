@@ -1,3 +1,40 @@
+# 부동산 매물관리 시스템 사용자 매뉴얼
+
+## 환경 설정
+
+### Admin 페이지 사용을 위한 GitHub Token 설정
+
+1. GitHub Personal Access Token 생성:
+   - https://github.com/settings/tokens
+   - "Generate new token (classic)" 클릭
+   - `repo` 권한 전체 선택
+   - Token 생성 후 복사
+
+2. Vercel 환경 변수 설정:
+   - Vercel Dashboard > 프로젝트 > Settings > Environment Variables
+   - `GITHUB_TOKEN` 추가 및 생성한 토큰 입력
+   - Redeploy
+
+3. 로컬 개발 환경:
+   ```bash
+   cp .env.example .env.local
+   # .env.local 파일에 GITHUB_TOKEN 입력
+   ```
+
+## Admin 페이지 사용법
+
+- **URL**: https://manual.realhome.kr/admin/login
+- **이메일**: master@runai.kr
+- **비밀번호**: real1130
+
+### 기능
+- WYSIWYG 에디터
+- 이미지 드래그 앤 드롭 업로드
+- GitHub 자동 커밋 & 푸시
+- Vercel 자동 재배포
+
+---
+
 <style>
 @font-face {
     font-family: 'Paperozi';

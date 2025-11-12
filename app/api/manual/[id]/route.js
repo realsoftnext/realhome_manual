@@ -28,20 +28,59 @@ export async function POST(request, { params }) {
   const { content } = await request.json()
   
   try {
-    const filePath = path.join(process.cwd(), 'manual', `${id}.md`)
-    await fs.writeFile(filePath, content, 'utf-8')
+    // Use GitHub API to update files
+    const token = process.env.GITHUB_TOKEN
+    const owner = 'realsoftnext'
+    const repo = 'realhome_manual'
+    const branch = 'main'
     
-    // Also update app/manual/*/content.mdx
-    const mdxPath = path.join(process.cwd(), 'app', 'manual', id, 'content.mdx')
-    await fs.writeFile(mdxPath, content, 'utf-8')
-    
-    // Git commit and push
-    const simpleGit = require('simple-git')
-    const git = simpleGit(process.cwd())
-    
-    await git.add([filePath, mdxPath])
-    await git.commit(`Update manual: ${id}`)
-    await git.push('origin', 'main')
+    if (!token) {
+      throw new Error('GITHUB_TOKEN not configured')
+    }
+
+    const files = [
+      { path: `manual/${id}.md`, content },
+      { path: `app/manual/${id}/content.mdx`, content }
+    ]
+
+    // Get current file SHAs
+    for (const file of files) {
+      const getFileUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${file.path}?ref=${branch}`
+      const getResponse = await fetch(getFileUrl, {
+        headers: {
+          'Authorization': `token ${token}`,
+          'Accept': 'application/vnd.github.v3+json',
+        },
+      })
+
+      let sha = null
+      if (getResponse.ok) {
+        const fileData = await getResponse.json()
+        sha = fileData.sha
+      }
+
+      // Update or create file
+      const updateUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${file.path}`
+      const updateResponse = await fetch(updateUrl, {
+        method: 'PUT',
+        headers: {
+          'Authorization': `token ${token}`,
+          'Accept': 'application/vnd.github.v3+json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          message: `Update manual: ${id}`,
+          content: Buffer.from(file.content).toString('base64'),
+          sha: sha,
+          branch: branch,
+        }),
+      })
+
+      if (!updateResponse.ok) {
+        const error = await updateResponse.json()
+        throw new Error(`GitHub API error: ${error.message}`)
+      }
+    }
     
     return NextResponse.json({ success: true })
   } catch (error) {
