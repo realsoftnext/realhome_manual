@@ -1,4 +1,3 @@
-import { Suspense } from 'react'
 import LayoutClient from './components/LayoutClient'
 import './globals.css'
 
@@ -13,10 +12,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ko">
-      <body suppressHydrationWarning>
-        <Suspense fallback={<div>Loading...</div>}>
-          <LayoutClient>{children}</LayoutClient>
-        </Suspense>
+      <body>
+        <LayoutClient>{children}</LayoutClient>
       </body>
     </html>
   )
