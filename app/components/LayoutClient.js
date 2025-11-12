@@ -1,32 +1,21 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { usePathname } from 'next/navigation'
 import Sidebar from './Sidebar'
 
 export default function LayoutClient({ children }) {
   const [sidebarOpen, setSidebarOpen] = useState(false)
-  const [mounted, setMounted] = useState(false)
   const pathname = usePathname()
-  const isManualPage = pathname?.startsWith('/manual/')
+  
+  // pathname이 /manual/로 시작하는지 체크
+  const isManualPage = pathname && pathname.startsWith('/manual/')
 
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  if (!mounted) {
-    return (
-      <div className="app-container">
-        <main className="main-content">
-          <div className="container">{children}</div>
-        </main>
-      </div>
-    )
-  }
+  console.log('LayoutClient:', { pathname, isManualPage }) // 디버깅용
 
   return (
     <div className="app-container">
-      {isManualPage && (
+      {isManualPage ? (
         <>
           <button 
             className="menu-toggle"
@@ -36,11 +25,15 @@ export default function LayoutClient({ children }) {
             ☰
           </button>
           <Sidebar isOpen={sidebarOpen} onToggle={() => setSidebarOpen(!sidebarOpen)} />
+          <main className="main-content with-sidebar">
+            <div className="container">{children}</div>
+          </main>
         </>
+      ) : (
+        <main className="main-content">
+          <div className="container">{children}</div>
+        </main>
       )}
-      <main className={`main-content ${isManualPage ? 'with-sidebar' : ''}`}>
-        <div className="container">{children}</div>
-      </main>
     </div>
   )
 }
