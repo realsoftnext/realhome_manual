@@ -531,7 +531,7 @@
 
 매물 관리 방법을 익혔다면, 고객 연락처 관리를 알아보세요:
 
-➡️ [6. 고객 연락처 관리](06-contact-management.md)
+➡️ [6. 고객 연락처 관리](/manual/06-contact-management)
 
 ---
 

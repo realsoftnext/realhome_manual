@@ -177,7 +177,7 @@ https://yourcompany.com/admin
 
 시스템에 접속했다면 다음 단계로 진행하세요:
 
-➡️ [2. 로그인 및 계정 관리](02-login-account.md)
+➡️ [2. 로그인 및 계정 관리](/manual/02-login-account)
 
 ***
 

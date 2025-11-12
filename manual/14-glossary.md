@@ -235,8 +235,8 @@
 
 ## 더 알아보기
 
-- [FAQ](12-faq.md)
-- [빠른 참조 가이드](13-quick-reference.md)
+- [FAQ](/manual/12-faq)
+- [빠른 참조 가이드](/manual/13-quick-reference)
 
 ---
 
