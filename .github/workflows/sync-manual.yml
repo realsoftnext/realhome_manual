@@ -1,0 +1,43 @@
+name: Sync Manual to App
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'manual/**/*.md'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Sync manual files
+        run: |
+          # manual 폴더의 .md 파일을 app/manual 구조로 동기화
+          for file in manual/*.md; do
+            if [ "$file" != "manual/README.md" ]; then
+              filename=$(basename "$file" .md)
+              targetDir="app/manual/$filename"
+              targetFile="$targetDir/page.mdx"
+              
+              # 폴더 생성
+              mkdir -p "$targetDir"
+              
+              # 파일 복사 (.md -> .mdx)
+              cp "$file" "$targetFile"
+              echo "✓ Synced: $file -> $targetFile"
+            fi
+          done
+      
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add app/manual/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🔄 Auto-sync: manual → app/manual" && git push)
