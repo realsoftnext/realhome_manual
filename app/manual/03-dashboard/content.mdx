@@ -331,7 +331,7 @@
 
 대시보드를 살펴봤다면, 이제 매물을 등록해보세요:
 
-➡️ [4. 매물 등록하기](04-product-registration.md)
+➡️ [4. 매물 등록하기](/manual/04-product-registration)
 
 ---
 

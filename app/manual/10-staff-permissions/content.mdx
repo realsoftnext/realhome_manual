@@ -489,7 +489,7 @@
 
 직원 관리를 익혔다면, 콘텐츠 관리 방법을 알아보세요:
 
-➡️ [11. 콘텐츠 관리](11-content-management.md)
+➡️ [11. 콘텐츠 관리](/manual/11-content-management)
 
 ---
 

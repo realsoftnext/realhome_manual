@@ -475,7 +475,7 @@
 
 연락처 관리를 익혔다면, 고객 문의를 처리하는 방법을 알아보세요:
 
-➡️ [7. 문의 관리](07-enquiry-management.md)
+➡️ [7. 문의 관리](/manual/07-enquiry-management)
 
 ---
 
