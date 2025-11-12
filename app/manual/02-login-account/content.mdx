@@ -12,7 +12,7 @@
 
 관리자 계정이 없으신가요? 관리자 회원가입
 
-<figure><img src="/images/image (1).png" alt="" /></figure>
+<figure><img src="/images/image1.png" alt="" /></figure>
 
 회원가입 후 승인대기상태가 되며, 관리자 승인 후에 로그인이 가능합니다.
 
@@ -57,7 +57,7 @@
 1. 직원용 이용약관
 2. 직원 기물유지동의서(NDA)
 
-<figure><img src="/images/image (2).png" alt="" /></figure>
+<figure><img src="/images/image2.png" alt="" /></figure>
 
 약관이 개정 되면 다시 약관동의 창이 나오며 동의를 해야 시스템을 이용할 수 있습니다.
 
