@@ -1,6 +1,7 @@
 {
   "name": "realhome-manual",
   "version": "1.0.0",
+  "type": "module",
   "description": "부동산 매물관리 시스템 사용자 매뉴얼",
   "scripts": {
     "dev": "next dev",
@@ -9,12 +10,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mdx-js/loader": "3.0.1",
+    "@mdx-js/react": "3.0.1",
+    "@next/mdx": "14.2.33",
     "next": "14.2.33",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "@next/mdx": "14.2.33",
-    "@mdx-js/loader": "3.0.1",
-    "@mdx-js/react": "3.0.1"
+    "remark-gfm": "^4.0.1"
   },
   "engines": {
     "node": ">=18.17.0"
