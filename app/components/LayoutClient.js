@@ -7,11 +7,13 @@ import Sidebar from './Sidebar'
 export default function LayoutClient({ children }) {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const pathname = usePathname()
-  const isManualPage = pathname && pathname.startsWith('/manual/')
+  
+  // 홈페이지(/) 또는 /manual/로 시작하는 모든 페이지에서 사이드바 표시
+  const showSidebar = pathname === '/' || (pathname && pathname.startsWith('/manual'))
 
   return (
     <div className="app-container">
-      {isManualPage ? (
+      {showSidebar ? (
         <>
           <button 
             className="menu-toggle"

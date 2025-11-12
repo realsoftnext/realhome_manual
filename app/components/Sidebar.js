@@ -79,7 +79,7 @@ export default function Sidebar({ isOpen, onToggle }) {
       <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
         <div className="sidebar-header">
           <Link href="/" className="sidebar-logo">
-            <h2>📘 매뉴얼</h2>
+            <h2>📘리얼홈 매뉴얼</h2>
           </Link>
           <button className="sidebar-close" onClick={onToggle}>
             ✕
