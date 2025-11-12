@@ -7,11 +7,7 @@ import Sidebar from './Sidebar'
 export default function LayoutClient({ children }) {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const pathname = usePathname()
-  
-  // pathname이 /manual/로 시작하는지 체크
   const isManualPage = pathname && pathname.startsWith('/manual/')
-
-  console.log('LayoutClient:', { pathname, isManualPage }) // 디버깅용
 
   return (
     <div className="app-container">
