@@ -43,6 +43,12 @@
           "title": "매물 관리하기",
           "file": "management.md",
           "order": 2
+        },
+        {
+          "id": "categories",
+          "title": "매물 종류 설정",
+          "file": "categories.md",
+          "order": 3
         }
       ]
     },
@@ -67,9 +73,9 @@
       ]
     },
     {
-      "id": "contracts-settings",
-      "title": "계약 및 설정",
-      "icon": "⚙️",
+      "id": "contracts",
+      "title": "계약 관리",
+      "icon": "📄",
       "order": 4,
       "chapters": [
         {
@@ -77,18 +83,26 @@
           "title": "계약 관리",
           "file": "contracts.md",
           "order": 1
-        },
-        {
-          "id": "categories",
-          "title": "매물 종류 설정",
-          "file": "categories.md",
-          "order": 2
-        },
+        }
+      ]
+    },
+    {
+      "id": "settings",
+      "title": "설정",
+      "icon": "⚙️",
+      "order": 5,
+      "chapters": [
         {
           "id": "staff",
           "title": "직원 및 권한 관리",
           "file": "staff.md",
-          "order": 3
+          "order": 1
+        },
+        {
+          "id": "terms",
+          "title": "약관 관리",
+          "file": "약관관리.md",
+          "order": 2
         }
       ]
     },
@@ -96,7 +110,7 @@
       "id": "content-management",
       "title": "콘텐츠 관리",
       "icon": "📝",
-      "order": 5,
+      "order": 6,
       "chapters": [
         {
           "id": "content",
@@ -110,7 +124,7 @@
       "id": "website-management",
       "title": "홈페이지 관리",
       "icon": "🌐",
-      "order": 6,
+      "order": 7,
       "chapters": [
         {
           "id": "website",
@@ -124,7 +138,7 @@
       "id": "reference",
       "title": "참고 자료",
       "icon": "📚",
-      "order": 7,
+      "order": 8,
       "chapters": [
         {
           "id": "faq",
