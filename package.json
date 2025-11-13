@@ -2,7 +2,7 @@
   "name": "realhome-manual",
   "version": "1.0.0",
   "type": "module",
-  "description": "부동산 매물관리 시스템 사용자 매뉴얼",
+  "description": "부동산 홈페이지 및 통합관리시스템 사용자 매뉴얼",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

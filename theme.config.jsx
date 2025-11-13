@@ -1,16 +1,16 @@
 const config = {
-  logo: <span style={{ fontWeight: 600 }}>리얼홈 부동산 매물관리 시스템 매뉴얼</span>,
+  logo: <span style={{ fontWeight: 600 }}>리얼홈 부동산 홈페이지 및 통합관리시스템 매뉴얼</span>,
   project: {
     link: 'https://github.com/realsoftnext/realhome_manual'
   },
   docsRepositoryBase: 'https://github.com/realsoftnext/realhome_manual/tree/main',
   footer: {
-    content: <span>리얼홈 부동산 매물관리 시스템 사용자 매뉴얼 © 2025</span>
+    content: <span>리얼홈 부동산 홈페이지 및 통합관리시스템 사용자 매뉴얼 © 2025</span>
   },
   head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta property="og:title" content="부동산 매물관리 시스템 매뉴얼" />
+      <meta property="og:title" content="부동산 홈페이지 및 통합관리시스템 매뉴얼" />
       <meta property="og:description" content="부동산 중개업소를 위한 매물관리 시스템 사용자 매뉴얼" />
       <style>{`
         @font-face {
