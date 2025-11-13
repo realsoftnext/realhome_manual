@@ -2,6 +2,7 @@ import { promises as fs } from 'fs'
 import path from 'path'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import remarkGfm from 'remark-gfm'
+import ImageModal from './ImageModal'
 
 export async function generateStaticParams() {
   // groups.json 읽기
@@ -40,6 +41,9 @@ export default async function Page({ params }) {
             mdxOptions: {
               remarkPlugins: [remarkGfm]
             }
+          }}
+          components={{
+            img: (props) => <ImageModal {...props} />
           }}
         />
       </div>
