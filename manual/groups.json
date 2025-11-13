@@ -141,6 +141,18 @@
           "title": "콘텐츠 관리",
           "file": "content.md",
           "order": 1
+        },
+        {
+          "id": "notices",
+          "title": "공지사항 관리",
+          "file": "notices.md",
+          "order": 2
+        },
+        {
+          "id": "faq",
+          "title": "FAQ 관리",
+          "file": "faq.md",
+          "order": 3
         }
       ]
     },
