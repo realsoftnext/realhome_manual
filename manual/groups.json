@@ -61,6 +61,12 @@
           "title": "테마 관리",
           "file": "themes.md",
           "order": 5
+        },
+        {
+          "id": "labels",
+          "title": "라벨 관리",
+          "file": "labels.md",
+          "order": 6
         }
       ]
     },
