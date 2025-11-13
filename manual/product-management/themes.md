@@ -636,11 +636,21 @@
 - 자주 사용하는 테마 위주로 만드세요
 
 ### Q11. 테마 이름을 변경하면 URL도 바뀌나요?
-**A.** 네, 자동으로 생성됩니다.
+**A.** 네, slug가 자동으로 재생성됩니다.
 ```
 테마 이름: 신혼부부
-→ URL: /themes/신혼부부
+→ Slug: sinhonbubu
+→ URL: /themes/sinhonbubu
+
+테마 이름: 역세권
+→ Slug: yeogsegwon  
+→ URL: /themes/yeogsegwon
 ```
+
+**💡 Slug란?**
+- URL에 사용되는 영문 주소입니다
+- 한글 이름을 로마자로 자동 변환합니다
+- 중복 방지를 위해 숫자가 붙을 수 있습니다 (예: sinhonbubu-2)
 
 ### Q12. 드래그로 순서 변경이 안 돼요
 **A.** 다음을 확인하세요:
