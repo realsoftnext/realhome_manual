@@ -1,0 +1,150 @@
+{
+  "groups": [
+    {
+      "id": "getting-started",
+      "title": "시작하기",
+      "icon": "🚀",
+      "order": 1,
+      "chapters": [
+        {
+          "id": "intro",
+          "title": "시작하기",
+          "file": "intro.md",
+          "order": 1
+        },
+        {
+          "id": "login",
+          "title": "로그인 및 계정 관리",
+          "file": "login.md",
+          "order": 2
+        },
+        {
+          "id": "dashboard",
+          "title": "대시보드",
+          "file": "dashboard.md",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": "product-management",
+      "title": "매물 관리",
+      "icon": "🏢",
+      "order": 2,
+      "chapters": [
+        {
+          "id": "registration",
+          "title": "매물 등록하기",
+          "file": "registration.md",
+          "order": 1
+        },
+        {
+          "id": "management",
+          "title": "매물 관리하기",
+          "file": "management.md",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "customer-management",
+      "title": "고객 관리",
+      "icon": "👥",
+      "order": 3,
+      "chapters": [
+        {
+          "id": "contacts",
+          "title": "고객 연락처 관리",
+          "file": "contacts.md",
+          "order": 1
+        },
+        {
+          "id": "enquiries",
+          "title": "문의 관리",
+          "file": "enquiries.md",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "contracts-settings",
+      "title": "계약 및 설정",
+      "icon": "⚙️",
+      "order": 4,
+      "chapters": [
+        {
+          "id": "contracts",
+          "title": "계약 관리",
+          "file": "contracts.md",
+          "order": 1
+        },
+        {
+          "id": "categories",
+          "title": "매물 종류 설정",
+          "file": "categories.md",
+          "order": 2
+        },
+        {
+          "id": "staff",
+          "title": "직원 및 권한 관리",
+          "file": "staff.md",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": "content-management",
+      "title": "콘텐츠 관리",
+      "icon": "📝",
+      "order": 5,
+      "chapters": [
+        {
+          "id": "content",
+          "title": "콘텐츠 관리",
+          "file": "content.md",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "website-management",
+      "title": "홈페이지 관리",
+      "icon": "🌐",
+      "order": 6,
+      "chapters": [
+        {
+          "id": "website",
+          "title": "홈페이지 관리",
+          "file": "website.md",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "reference",
+      "title": "참고 자료",
+      "icon": "📚",
+      "order": 7,
+      "chapters": [
+        {
+          "id": "faq",
+          "title": "FAQ",
+          "file": "faq.md",
+          "order": 1
+        },
+        {
+          "id": "quick-reference",
+          "title": "빠른 참조",
+          "file": "quick-reference.md",
+          "order": 2
+        },
+        {
+          "id": "glossary",
+          "title": "용어 설명",
+          "file": "glossary.md",
+          "order": 3
+        }
+      ]
+    }
+  ]
+}
