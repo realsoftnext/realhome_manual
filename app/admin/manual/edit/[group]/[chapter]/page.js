@@ -68,14 +68,20 @@ export default function EditManualChapterPage() {
       const data = await response.json()
 
       if (data.success) {
-        alert('저장 및 GitHub에 푸시 완료!')
+        alert(
+          '✅ 저장 완료!\n\n' +
+          '📝 GitHub에 커밋되었습니다.\n' +
+          '⏱️ Vercel에서 자동 배포 중입니다. (약 1-2분 소요)\n\n' +
+          '💡 변경사항은 배포 완료 후 실제 사이트에 반영됩니다.\n' +
+          '   배포가 완료될 때까지 이전 내용이 표시될 수 있습니다.'
+        )
         router.push('/admin/manual')
       } else {
-        alert('저장 실패: ' + data.error)
+        alert('❌ 저장 실패\n\n' + data.error)
       }
     } catch (error) {
       console.error('Save error:', error)
-      alert('저장 실패: ' + error.message)
+      alert('❌ 저장 실패\n\n' + error.message)
     } finally {
       setSaving(false)
     }

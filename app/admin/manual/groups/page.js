@@ -76,13 +76,18 @@ export default function AdminGroupsPage() {
 
       const data = await response.json()
       if (data.success) {
-        alert('순서 저장 완료!')
+        alert(
+          '✅ 순서 저장 완료!\n\n' +
+          '📝 GitHub에 커밋되었습니다.\n' +
+          '⏱️ Vercel에서 자동 배포 중입니다. (약 1-2분 소요)\n\n' +
+          '💡 변경사항은 배포 완료 후 사이트에 반영됩니다.'
+        )
       } else {
-        alert('저장 실패: ' + data.error)
+        alert('❌ 저장 실패\n\n' + data.error)
       }
     } catch (error) {
       console.error('Save error:', error)
-      alert('저장 실패: ' + error.message)
+      alert('❌ 저장 실패\n\n' + error.message)
     } finally {
       setSaving(false)
     }
@@ -119,16 +124,21 @@ export default function AdminGroupsPage() {
 
       const data = await response.json()
       if (data.success) {
-        alert('그룹 추가 완료!')
+        alert(
+          '✅ 그룹 추가 완료!\n\n' +
+          '📝 GitHub에 커밋되었습니다.\n' +
+          '⏱️ Vercel에서 자동 배포 중입니다. (약 1-2분 소요)\n\n' +
+          '💡 새 그룹은 배포 완료 후 사이트에 표시됩니다.'
+        )
         setShowAddGroupModal(false)
         setNewGroupData({ id: '', title: '', icon: '📁' })
         loadGroups()
       } else {
-        alert('추가 실패: ' + data.error)
+        alert('❌ 추가 실패\n\n' + data.error)
       }
     } catch (error) {
       console.error('Add group error:', error)
-      alert('추가 실패: ' + error.message)
+      alert('❌ 추가 실패\n\n' + error.message)
     } finally {
       setSaving(false)
     }
@@ -154,14 +164,19 @@ export default function AdminGroupsPage() {
 
       const data = await response.json()
       if (data.success) {
-        alert('그룹 삭제 완료!')
+        alert(
+          '✅ 그룹 삭제 완료!\n\n' +
+          '📝 GitHub에 커밋되었습니다.\n' +
+          '⏱️ Vercel에서 자동 배포 중입니다. (약 1-2분 소요)\n\n' +
+          '💡 삭제된 그룹은 배포 완료 후 사이트에서 제거됩니다.'
+        )
         loadGroups()
       } else {
-        alert('삭제 실패: ' + data.error)
+        alert('❌ 삭제 실패\n\n' + data.error)
       }
     } catch (error) {
       console.error('Delete group error:', error)
-      alert('삭제 실패: ' + error.message)
+      alert('❌ 삭제 실패\n\n' + error.message)
     } finally {
       setSaving(false)
     }
@@ -200,17 +215,22 @@ export default function AdminGroupsPage() {
 
       const data = await response.json()
       if (data.success) {
-        alert('챕터 추가 완료!')
+        alert(
+          '✅ 챕터 추가 완료!\n\n' +
+          '📝 GitHub에 커밋되었습니다.\n' +
+          '⏱️ Vercel에서 자동 배포 중입니다. (약 1-2분 소요)\n\n' +
+          '💡 새 챕터는 배포 완료 후 사이트에 표시됩니다.'
+        )
         setShowAddChapterModal(false)
         setNewChapterData({ id: '', title: '' })
         setSelectedGroupId(null)
         loadGroups()
       } else {
-        alert('추가 실패: ' + data.error)
+        alert('❌ 추가 실패\n\n' + data.error)
       }
     } catch (error) {
       console.error('Add chapter error:', error)
-      alert('추가 실패: ' + error.message)
+      alert('❌ 추가 실패\n\n' + error.message)
     } finally {
       setSaving(false)
     }
@@ -237,14 +257,19 @@ export default function AdminGroupsPage() {
 
       const data = await response.json()
       if (data.success) {
-        alert('챕터 삭제 완료!')
+        alert(
+          '✅ 챕터 삭제 완료!\n\n' +
+          '📝 GitHub에 커밋되었습니다.\n' +
+          '⏱️ Vercel에서 자동 배포 중입니다. (약 1-2분 소요)\n\n' +
+          '💡 삭제된 챕터는 배포 완료 후 사이트에서 제거됩니다.'
+        )
         loadGroups()
       } else {
-        alert('삭제 실패: ' + data.error)
+        alert('❌ 삭제 실패\n\n' + data.error)
       }
     } catch (error) {
       console.error('Delete chapter error:', error)
-      alert('삭제 실패: ' + error.message)
+      alert('❌ 삭제 실패\n\n' + error.message)
     } finally {
       setSaving(false)
     }
