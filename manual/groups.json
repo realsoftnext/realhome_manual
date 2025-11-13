@@ -55,6 +55,12 @@
           "title": "매물 종류 설정",
           "file": "categories.md",
           "order": 4
+        },
+        {
+          "id": "themes",
+          "title": "테마 관리",
+          "file": "themes.md",
+          "order": 5
         }
       ]
     },
