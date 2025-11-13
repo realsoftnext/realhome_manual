@@ -45,10 +45,16 @@
           "order": 2
         },
         {
+          "id": "transaction-type",
+          "title": "거래 종류 관리",
+          "file": "transaction-type.md",
+          "order": 3
+        },
+        {
           "id": "categories",
           "title": "매물 종류 설정",
           "file": "categories.md",
-          "order": 3
+          "order": 4
         }
       ]
     },
