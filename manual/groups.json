@@ -103,6 +103,12 @@
           "title": "약관 관리",
           "file": "terms.md",
           "order": 2
+        },
+        {
+          "id": "2fa",
+          "title": "2단계 인증 (2FA)",
+          "file": "2fa.md",
+          "order": 3
         }
       ]
     },
