@@ -137,9 +137,9 @@
       "order": 6,
       "chapters": [
         {
-          "id": "content",
-          "title": "콘텐츠 관리",
-          "file": "content.md",
+          "id": "pages",
+          "title": "페이지 관리",
+          "file": "pages.md",
           "order": 1
         },
         {
