@@ -127,6 +127,12 @@
           "title": "2단계 인증 (2FA)",
           "file": "2fa.md",
           "order": 3
+        },
+        {
+          "id": "ga4",
+          "title": "Google Analytics 4 연동",
+          "file": "ga4.md",
+          "order": 4
         }
       ]
     },
